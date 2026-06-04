@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hani Guenoune — IA appliquée, structuration de connaissances & LLM</title>
+<meta name="description" content="Docteur en informatique. Conception de systèmes combinant IA symbolique explicable et grands modèles de langage pour structurer la connaissance et fiabiliser les systèmes génératifs.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="brand">Hani <span>Guenoune</span></div>
+    <ul>
+      <li><a href="#expertise">Domaines</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#enseignement">Enseignement</a></li>
+      <li><a href="#cursus">Cursus</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#recherche">Recherche</a></li>
+      <li><a href="#cv-view">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Docteur en informatique · Montpellier</div>
+    <h1>Hani Guenoune</h1>
+    <p class="lead">
+      Docteur en informatique. Travaux portant sur la transformation des données peu structurées
+      en connaissances exploitables. Méthodes symboliques explicables et grands modèles de langage.
+      Travaux récents : assistance des LLM au génie logiciel, fiabilisation des architectures
+      agentiques, structuration de connaissances.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="cv.pdf" target="_blank" rel="noopener">Voir le CV</a>
+      <a class="btn" href="#projets">Projets principaux</a>
+      <a class="btn" href="#recherche">Bio &amp; recherche</a>
+      <a class="btn" href="mailto:enhagu01@gmail.com">Me contacter</a>
+    </div>
+  </div>
+</header>
+
+<section id="expertise">
+  <div class="wrap">
+    <div class="section-head"><h2>Domaines de recherche</h2></div>
+    <div class="expertise">
+      <div class="exp-card">
+        <h3>IA symbolique et générative</h3>
+        <p>L'essentiel de mon travail consiste à associer des méthodes symboliques (analyse formelle de concepts, graphes de connaissances) à des modèles de langage, pour obtenir des résultats structurés et explicables.</p>
+      </div>
+      <div class="exp-card">
+        <h3>Fiabilité des systèmes génératifs</h3>
+        <p>Je m'intéresse au contrôle et à la validation des sorties de LLM, ainsi qu'aux questions d'orchestration et de propagation d'erreurs dans les architectures multi-agents.</p>
+      </div>
+      <div class="exp-card">
+        <h3>NLP et ingénierie de la connaissance</h3>
+        <p>Mes travaux de thèse et de post-doctorat ont porté sur l'extraction d'information, les schémas d'annotation et la construction de corpus et de bases de connaissances.</p>
+      </div>
+      <div class="exp-card">
+        <h3>Architectures multi-agents</h3>
+        <p>Orchestration d'agents à base de LLM : définition des rôles, paradigmes de communication, cohérence globale et gestion de la propagation des erreurs.</p>
+      </div>
+      <div class="exp-card">
+        <h3>De la recherche au déploiement</h3>
+        <p>J'ai l'habitude de mener un projet du prototype de recherche jusqu'à une application utilisable : Python, Java, Docker, Git, Maven, applications web.</p>
+      </div>
+      <div class="exp-card">
+        <h3>Travail interdisciplinaire</h3>
+        <p>Plusieurs de mes projets se sont faits avec des non-informaticiens — en sciences de l'éducation, psychologie et linguistique — pour construire des outils communs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projets">
+  <div class="wrap">
+    <div class="section-head"><h2>Projets principaux</h2></div>
+    <div style="display:flex;justify-content:flex-end;margin:-12px 0 12px">
+      <div class="carousel-ctrl">
+        <button class="car-btn" data-dir="-1" aria-label="Projet précédent">&lsaquo;</button>
+        <button class="car-btn" data-dir="1" aria-label="Projet suivant">&rsaquo;</button>
+      </div>
+    </div>
+    <div class="cases">
+    <div class="cases-track">
+
+      <div class="slide"><article class="case">
+        <span class="tag">Travail en cours · IA neuro-symbolique · Agents LLM</span>
+        <h3>Jarvis — Projet d'agentification de JeuxDeMots</h3>
+        <p class="ctx">LIRMM, équipe SLICE — en cours · open-source</p>
+        <dl>
+          <dt>Problème</dt><dd>Les LLM produisent un langage fluide mais hallucinent ; une base de connaissances symbolique est exacte mais coûteuse à enrichir et à corriger. Comment faire coopérer les deux pour découvrir, contrôler et consolider de la connaissance fiable ?</dd>
+          <dt>Approche</dt><dd>Architecture neuro-symbolique où le LLM propose et la couche symbolique valide. Le modèle génère des relations candidates ; un vérificateur déterministe (inférence bornée sur le graphe) les confirme, les contredit ou les écarte avant toute écriture. Cinq agents guidés — enrichissement, audit, détection de lacunes, signalement d'erreurs, statistiques — et une orchestration multi-agents.</dd>
+          <dt>Résultat</dt><dd>Plateforme web et ~35 outils exposés via le Model Context Protocol (utilisables depuis n'importe quel client LLM), client typé reproductible (cache, traçabilité), <em>claim-checker</em> déterministe et auditable, visualisation de sous-graphes pour l'explicabilité.</dd>
+        </dl>
+        <div class="stack">
+          <span class="chip">Agents LLM</span><span class="chip">Neuro-symbolique</span><span class="chip">JeuxDeMots</span><span class="chip">MCP</span><span class="chip">LangChain</span><span class="chip">Python</span>
+        </div>
+        <div class="links">
+          <a href="https://portail-aren.lirmm.fr/jdm-agent/jarvis">Voir la plateforme →</a>
+        </div>
+      </article></div>
+
+      <div class="slide"><article class="case">
+        <span class="tag">IA symbolique + LLM · Génie logiciel</span>
+        <h3>Restructuration de modèles de classes assistée par LLM</h3>
+        <p class="ctx">LIRMM, équipe SLICE — 2025 · publié à CONCEPTS 2025</p>
+        <dl>
+          <dt>Problème</dt><dd>Identifier des opportunités de refactorisation dans des modèles UML est coûteux et difficile à automatiser ; les abstractions produites automatiquement restent inintelligibles sans un bon nommage.</dd>
+          <dt>Approche</dt><dd>Processus combinant l'Analyse Formelle de Concepts relationnelle (extraction symbolique d'abstractions) et des LLM pour nommer et interpréter ces abstractions.</dd>
+          <dt>Résultat</dt><dd>Démonstration de la complémentarité symbolique/génératif sur des modèles UML réels ; évaluation des conditions où le LLM réussit (ou échoue) le nommage. Publication internationale.</dd>
+        </dl>
+        <div class="stack">
+          <span class="chip">AFC relationnelle</span><span class="chip">LLM</span><span class="chip">UML</span><span class="chip">Prompt engineering</span>
+        </div>
+        <div class="links">
+          <a href="https://hal-lirmm.ccsd.cnrs.fr/lirmm-05249788">PDF de l'article →</a>
+        </div>
+      </article></div>
+
+      <div class="slide"><article class="case">
+        <span class="tag">Plateforme en production · NLP</span>
+        <h3>AREN / KeepTalk — extraction de connaissances pour l'assistance aux débats</h3>
+        <p class="ctx">Projet ANR AREN-DIA, LIRMM — 2023–2024</p>
+        <dl>
+          <dt>Problème</dt><dd>Aider des élèves à structurer leurs arguments en ligne, et extraire automatiquement la connaissance produite dans des débats peu formels.</dd>
+          <dt>Approche</dt><dd>Plateforme web de débats + pipeline d'indexation et d'extraction d'associations par Analyse Formelle de Concepts, adossé au réseau JeuxDeMots, enrichi itérativement.</dd>
+          <dt>Résultat</dt><dd>Application open-source déployée et utilisée en contexte éducatif réel ; collaboration avec des équipes en sciences de l'éducation, psychologie et linguistique. 3 publications.</dd>
+        </dl>
+        <div class="stack">
+          <span class="chip">Java</span><span class="chip">Web</span><span class="chip">AFC</span><span class="chip">Graphes de connaissances</span><span class="chip">Open-source</span>
+        </div>
+        <div class="links">
+          <a href="https://portail-aren.lirmm.fr/aren2023/">Voir la plateforme →</a>
+          <a href="https://hal-lirmm.ccsd.cnrs.fr/lirmm-04931913">Publication →</a>
+        </div>
+      </article></div>
+
+      <div class="slide"><article class="case">
+        <span class="tag">Apprentissage de règles symbolique</span>
+        <h3>GRASP-it — classification de relations sémantiques</h3>
+        <p class="ctx">LIRMM, équipe TEXTE — 2023–2024</p>
+        <dl>
+          <dt>Problème</dt><dd>Capturer finement les relations sémantiques dans les constructions « A de B » (partie-tout, possession, matière…), malgré la polysémie et le recouvrement des catégories.</dd>
+          <dt>Approche</dt><dd>Algorithme d'apprentissage symbolique par induction généralisant des signatures sémantiques en modèles de contraintes interprétables et pondérés.</dd>
+          <dt>Résultat</dt><dd>Moteur paramétrable hébergé et requêtable ; corpus annoté public. 2 publications.</dd>
+        </dl>
+        <div class="stack">
+          <span class="chip">Apprentissage de règles</span><span class="chip">Sémantique lexicale</span><span class="chip">JeuxDeMots</span>
+        </div>
+        <div class="links">
+          <a href="https://www.jeuxdemots.org/rezo-GEN1.php">Démo / données →</a>
+          <a href="https://pfia2024.univ-lr.fr/assets/files/Conf%C3%A9rence-IC/IC_2024_paper_20.pdf">Publication (IC @ PFIA) →</a>
+        </div>
+      </article></div>
+
+      <div class="slide"><article class="case">
+        <span class="tag">Systèmes NLP explicables</span>
+        <h3>ARCS — résolution d'anaphores par le sens commun</h3>
+        <p class="ctx">Thèse CIFRE LIRMM–Emvista — 2018–2022</p>
+        <dl>
+          <dt>Problème</dt><dd>Résoudre automatiquement les anaphores dans des textes peu formels (e-mails éclatés en fils de discussion), là où les corpus de référence classiques ne suffisent pas.</dd>
+          <dt>Approche</dt><dd>Système modulaire et <strong>explicable</strong> mobilisant des heuristiques sémantiques issues de JeuxDeMots ; construction de bout en bout d'un corpus annoté (schéma, protocole, accord inter-annotateurs).</dd>
+          <dt>Résultat</dt><dd>Amélioration mesurable apportée par les connaissances sémantiques ; premier corpus français d'e-mails annotés en anaphores, mis à disposition de la communauté. 2 publications.</dd>
+        </dl>
+        <div class="stack">
+          <span class="chip">NLP symbolique</span><span class="chip">Annotation</span><span class="chip">Explicabilité</span><span class="chip">Python</span>
+        </div>
+        <div class="links">
+          <a href="https://theses.fr/2022UMONS073">Thèse (PDF) →</a>
+          <a href="https://aclanthology.org/2020.crac-1.17.pdf">Article (CRAC@COLING) →</a>
+        </div>
+      </article></div>
+
+      <div class="slide"><article class="case">
+        <span class="tag">Raisonnement analogique · NLP</span>
+        <h3>Interprétation automatique d'analogies sémantiques</h3>
+        <p class="ctx">LIRMM, équipe TEXTE — 2016–2018, prolongé</p>
+        <dl>
+          <dt>Problème</dt><dd>Résoudre des équations analogiques A:B:C:x et interpréter le langage figuré, malgré la variabilité structurelle des analogies.</dd>
+          <dt>Approche</dt><dd>Transposition des relations d'un domaine source vers un domaine cible via le graphe de connaissances JeuxDeMots ; corpus AnalogiX annoté en qualité et structure grâce au jeu sérieux CompalogiX.</dd>
+          <dt>Résultat</dt><dd>Système d'interprétation d'analogies et corpus annoté mis à disposition. 3 publications (TSD 2024, JADT 2024, CORIA 2025).</dd>
+        </dl>
+        <div class="stack">
+          <span class="chip">Graphes de connaissances</span><span class="chip">Analogies</span><span class="chip">JeuxDeMots</span><span class="chip">Jeu sérieux</span>
+        </div>
+        <div class="links">
+          <a href="https://hal-lirmm.ccsd.cnrs.fr/lirmm-04643561v1/file/Explaining_Metaphors_by_Solving_Analogies_using_a_knowledge_graph_in_the_French_language.pdf">Article (TSD) →</a>
+          <a href="https://aclanthology.org/2025.jeptalnrecital-coria.23.pdf">Article (CORIA) →</a>
+        </div>
+      </article></div>
+
+      <div class="slide"><article class="case">
+        <span class="tag">Extraction d'information · Domaine spécialisé</span>
+        <h3>Extraction de relations sémantiques — portail médecine de Wikipédia</h3>
+        <p class="ctx">LIRMM, équipe TEXTE</p>
+        <dl>
+          <dt>Objectif</dt><dd>Enrichir une base de connaissances avec des relations sémantiques issues d'un domaine spécialisé.</dd>
+          <dt>Approche</dt><dd>Détection de termes composés par patrons morpho-syntaxiques et levée d'ambiguïté par contraintes sémantiques, articulées aux entrées de JeuxDeMots.</dd>
+        </dl>
+        <div class="stack">
+          <span class="chip">Extraction de relations</span><span class="chip">Patrons morpho-syntaxiques</span><span class="chip">Santé</span>
+        </div>
+      </article></div>
+
+    </div>
+  </div>
+    <div class="car-dots" id="car-dots" aria-label="Sélection du projet"></div>
+  </div>
+</section>
+
+<section id="enseignement">
+  <div class="wrap">
+    <div class="section-head"><h2>Enseignement</h2></div>
+    <p style="max-width:780px;color:var(--ink-soft);margin:0 0 22px;font-size:16px">
+      Vacataire puis ATER à Polytech Montpellier et à la Faculté des sciences de l'Université de
+      Montpellier (~300 h), j'enseigne du L1 au M2 et aux cycles d'ingénieurs (PEIP, DaMs, DO).
+      Mes enseignements portent sur le <strong>génie logiciel</strong> et ses fondements, avec des
+      ouvertures sur le traitement du langage. J'ai pris en charge plusieurs UE en autonomie —
+      conception des supports, sujets et corrections d'examens.
+    </p>
+    <p style="margin:0 0 18px;display:flex;gap:12px;flex-wrap:wrap">
+      <button class="btn" id="teach-toggle" aria-expanded="false" aria-controls="teach-detail">Voir le détail</button>
+      <a class="btn" href="https://drive.google.com/drive/folders/17-Rwnl5UUImCdhUDCihFYgPAQoeXq50j?usp=drive_link">Supports de cours, TD &amp; TP →</a>
+    </p>
+    <div id="teach-detail" hidden>
+    <div class="teach-wrap">
+      <table class="teach">
+        <thead>
+          <tr>
+            <th>Statut</th><th>Année</th><th>Établissement</th><th>Public</th><th>Niveau</th>
+            <th>Matière</th><th class="num">Vol. (HeTD)</th><th>Nature</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Vacataire</td><td>2024–25</td><td>Polytech</td><td>Ing.</td><td>éq. M1</td><td class="matiere">Conception &amp; Programmation par Objet 2 (CPO2)</td><td class="num">48,75</td><td>CM-TD/TP</td></tr>
+          <tr><td>Vacataire</td><td>2024–25</td><td>Fac. des Sciences</td><td>Master (ICo)</td><td>M1</td><td class="matiere">Structures de données (SD)</td><td class="num">24</td><td>TD/TP</td></tr>
+          <tr><td>Vacataire</td><td>2024–25</td><td>Polytech</td><td>Ing.</td><td>éq. L3</td><td class="matiere">Fondamentaux Architecture &amp; Systèmes d'Exploitation (FASE)</td><td class="num">13,5</td><td>TD-TP</td></tr>
+          <tr><td>Vacataire</td><td>2024–25</td><td>Fac. des Sciences</td><td>M2 (IASD)</td><td>M2</td><td class="matiere">Langage Naturel 2 — sémantique (LN2)</td><td class="num">6</td><td>CM-TD/TP</td></tr>
+          <tr><td>Vacataire</td><td>2024–25</td><td>Fac. des Sciences</td><td>M2 (IASD)</td><td>M2</td><td class="matiere">IA pour le Génie Logiciel (IAGL)</td><td class="num">6</td><td>CM-TD/TP</td></tr>
+          <tr><td>Vacataire</td><td>2024–25</td><td>Fac. des Sciences</td><td>M1 (GL)</td><td>M1</td><td class="matiere">Programmation par Objets (PO)</td><td class="num">1,5</td><td>TD/TP</td></tr>
+          <tr class="sub"><td colspan="6">Volume horaire 2024–25</td><td class="num">99,75</td><td></td></tr>
+
+          <tr><td>ATER</td><td>2025–26</td><td>Polytech</td><td>DaMs</td><td>éq. L3</td><td class="matiere">Shell &amp; CLI</td><td class="num">9</td><td>TD/TP</td></tr>
+          <tr><td>ATER</td><td>2025–26</td><td>Polytech</td><td>PeiP</td><td>éq. L1</td><td class="matiere">Utilisation des Systèmes Informatiques (USI)</td><td class="num">45</td><td>TP</td></tr>
+          <tr><td>ATER</td><td>2025–26</td><td>Polytech</td><td>DaMs</td><td>éq. M1</td><td class="matiere">Conception &amp; Programmation par Objet 2 (CPO2)</td><td class="num">48,75</td><td>CM-TD+TP</td></tr>
+          <tr><td>ATER</td><td>2025–26</td><td>Polytech</td><td>DO</td><td>éq. M1</td><td class="matiere">Automates &amp; Langages formels</td><td class="num">15</td><td>CM-TD+TP</td></tr>
+          <tr><td>ATER</td><td>2025–26</td><td>Polytech</td><td>PeiP</td><td>éq. L1</td><td class="matiere">Algorithmique</td><td class="num">63</td><td>TD+TP</td></tr>
+          <tr><td>ATER</td><td>2025–26</td><td>Polytech</td><td>DaMs</td><td>éq. L3</td><td class="matiere">Automates &amp; Langages formels</td><td class="num">22,5</td><td>CM-TD+TP</td></tr>
+          <tr class="sub"><td colspan="6">Volume horaire 2025–26</td><td class="num">203,25</td><td></td></tr>
+
+          <tr class="sub"><td colspan="6">Total</td><td class="num">303</td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="teach-legend">
+      Polytech = École Polytechnique universitaire de Montpellier · Fac. des Sciences = Université de
+      Montpellier · PeiP / DaMs / DO = parcours d'ingénieur Polytech · éq. = année du cycle ingénieur
+      équivalente · HeTD = heures équivalent TD.
+    </p>
+    </div>
+  </div>
+</section>
+
+<section id="cursus">
+  <div class="wrap">
+    <div class="section-head"><h2>Cursus</h2></div>
+
+    <div class="edu-entry">
+      <div class="top">
+        <h3>Doctorat en informatique — Université de Montpellier</h3>
+        <span class="date">2018 – 2022</span>
+      </div>
+      <button class="edu-toggle" aria-expanded="false">Voir le détail</button>
+      <div class="edu-detail" hidden>
+      <p>
+        Thèse CIFRE (LIRMM – Emvista), dirigée par Mathieu Lafourcade.
+        <em>« Résolution des anaphores dans la communication électronique médiée : apport des
+        heuristiques sémantiques et de sens commun. »</em> Soutenue le 15 décembre 2022.
+        <strong>Qualifié aux fonctions de Maître de conférences, section CNU 27.</strong>
+      </p>
+      <p class="jury">
+        Jury : Patrice Bellot (PU, Aix-Marseille, rapporteur) · Iris Eshkol-Taravella (PU,
+        Paris-Nanterre, rapporteure) · Sandra Bringay (PU, Univ. Paul-Valéry, présidente) ·
+        Marianne Huchard (PU, Univ. de Montpellier, examinatrice) · Didier Schwab (MCF HDR,
+        Grenoble Alpes, examinateur) · Cédric Lopez (Emvista, invité).
+      </p>
+      </div>
+    </div>
+
+    <div class="edu-entry">
+      <div class="top">
+        <h3>Master DECOL — Données, Extraction, Connaissances, Ontologies, Langage</h3>
+        <span class="date">2016 – 2018</span>
+      </div>
+      <button class="edu-toggle" aria-expanded="false">Voir le détail</button>
+      <div class="edu-detail" hidden>
+      <p>
+        Université de Montpellier, Faculté des sciences. Stage de fin d'études au LIRMM :
+        <em>résolution automatique d'analogies sémantiques</em> (encadrant : M. Lafourcade).
+      </p>
+      </div>
+    </div>
+
+    <div class="edu-entry">
+      <div class="top">
+        <h3>Master Systèmes Informatiques Intelligents (SII)</h3>
+        <span class="date">2012 – 2014</span>
+      </div>
+      <button class="edu-toggle" aria-expanded="false">Voir le détail</button>
+      <div class="edu-detail" hidden>
+      <p>
+        USTHB, Alger. Stage de fin d'études : <em>résolution du problème de tournée de véhicules avec
+        collectes et livraisons simultanées par une approche coopérative de méta-heuristiques</em>
+        (encadrant : A. Boukra).
+      </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <div class="section-head"><h2>Publications</h2></div>
+
+    <div class="pub-group">Chapitres d'ouvrage</div>
+    <div class="pubs">
+      <div class="pub">
+        <span class="venue">Springer · 2022</span>
+        <a class="title" href="https://link.springer.com/chapter/10.1007/978-3-030-90287-2_2">Recursive Named Entity Recognition</a>
+        <span class="authors">C. Lopez, M. Mekaoui, K. Aubry, G. Tisserant, H. Guenoune, M. Dodard, J. Bort, P. Garnier — Advances in Knowledge Discovery and Management, pp. 25–45</span>
+      </div>
+    </div>
+
+    <div class="pub-group">Articles de revue</div>
+    <div class="pubs">
+      <div class="pub">
+        <span class="venue">Revue Intelligibilité du Numérique · 2024</span>
+        <a class="title" href="https://hal-lirmm.ccsd.cnrs.fr/lirmm-04931913">Débats en ligne : l'analyse formelle de concepts comme outil d'extraction de connaissances</a>
+        <span class="authors">I. Ben-Sassi, H. Guenoune, A. Bazin, M. Huchard, M. Lafourcade, J. Sallantin — n°6/2024</span>
+      </div>
+    </div>
+
+    <div class="pub-group">Conférences internationales</div>
+    <div class="pubs">
+      <div class="pub">
+        <span class="venue">CONCEPTS 2025</span>
+        <a class="title" href="https://hal-lirmm.ccsd.cnrs.fr/lirmm-05249788">LLM-Assisted Relational Concept Analysis for Class Model Restructuring</a>
+        <span class="authors">H. Guenoune, A. Gutierrez, M. Huchard, M. Lafourcade, P. Martin, A. Miralles, Y. Zhang — LNCS/LNAI vol. 15941, pp. 107–123</span>
+      </div>
+      <div class="pub">
+        <span class="venue">TSD 2024</span>
+        <a class="title" href="https://hal-lirmm.ccsd.cnrs.fr/lirmm-04643561v1/file/Explaining_Metaphors_by_Solving_Analogies_using_a_knowledge_graph_in_the_French_language.pdf">Explaining Metaphors by Solving Analogies using a Knowledge Graph in the French Language</a>
+        <span class="authors">J. Roux, H. Guenoune, M. Lafourcade, R. Moot — pp. 40–50</span>
+      </div>
+      <div class="pub">
+        <span class="venue">JADT 2024</span>
+        <a class="title" href="https://hal-lirmm.ccsd.cnrs.fr/lirmm-04643469/document">Explication de métaphores via la résolution d'analogies à l'aide d'un graphe de connaissances</a>
+        <span class="authors">J. Roux, H. Guenoune, M. Lafourcade, R. Moot — pp. 813–822</span>
+      </div>
+      <div class="pub">
+        <span class="venue">JADT 2024</span>
+        <a class="title" href="https://hal-lirmm.ccsd.cnrs.fr/lirmm-04637347/document">Dispositif d'apprentissage automatique collaboratif pour la pratique du débat</a>
+        <span class="authors">I. Ben-Sassi, H. Guenoune, A. Bazin, M. Huchard, M. Lafourcade, J. Sallantin</span>
+      </div>
+      <div class="pub">
+        <span class="venue">MISC 2014</span>
+        <a class="title" href="https://old.univ-eloued.dz/fr/index.php/41-factecno/factecno11/518-misc2014">Cooperative Approach for Vehicle Routing Problem with Simultaneous Pickup and Delivery</a>
+        <span class="authors">M. Berghida, A. Boukra, H. Guenoune, M. El-Ksouri</span>
+      </div>
+    </div>
+
+    <div class="pub-group">Conférences nationales</div>
+    <div class="pubs">
+      <div class="pub">
+        <span class="venue">CORIA 2025</span>
+        <a class="title" href="https://aclanthology.org/2025.jeptalnrecital-coria.23.pdf">Utilisation de mécanismes inférentiels dans le processus d'explication automatique de la métaphore à une inconnue</a>
+        <span class="authors">J. Roux, H. Guenoune, M. Lafourcade, R. Moot — pp. 265–282</span>
+      </div>
+      <div class="pub">
+        <span class="venue">IC @ PFIA 2024</span>
+        <a class="title" href="https://pfia2024.univ-lr.fr/assets/files/Conf%C3%A9rence-IC/IC_2024_paper_20.pdf">Extraction automatique de règles pour la détermination de types de relations sémantiques dans les constructions génitives en français</a>
+        <span class="authors">H. Guenoune, M. Lafourcade — pp. 25–35</span>
+      </div>
+      <div class="pub">
+        <span class="venue">EGC 2021</span>
+        <a class="title" href="https://editions-rnti.fr/render_pdf.php?p=1002647">Classification de questions en langage naturel par type sémantique des réponses attendues</a>
+        <span class="authors">T. Oriol, M. Dodard, K. Cousot, M. Mekaoui, H. Guenoune, J. Bort, T. Sanchez, P. Garnier, C. Lopez — pp. 181–192</span>
+      </div>
+      <div class="pub">
+        <span class="venue">PRAXILING 2019</span>
+        <a class="title" href="https://hal.science/hal-03915593/document">Vers une résolution des relations anaphoriques dans la communication électronique médiée</a>
+        <span class="authors">H. Guenoune, C. Lopez, G. Tisserant, M. Lafourcade, M. Mekaoui — pp. 138–150</span>
+      </div>
+    </div>
+
+    <div class="pub-group">Ateliers internationaux</div>
+    <div class="pubs">
+      <div class="pub">
+        <span class="venue">CogALex @ LREC-COLING 2024</span>
+        <a class="title" href="https://aclanthology.org/2024.cogalex-1.4.pdf">Symbolic Learning of Rules for Semantic Relation Types Identification in French Genitive Postnominal Prepositional Phrases</a>
+        <span class="authors">H. Guenoune, M. Lafourcade — pp. 32–41</span>
+      </div>
+      <div class="pub">
+        <span class="venue">CRAC @ COLING 2020</span>
+        <a class="title" href="https://aclanthology.org/2020.crac-1.17.pdf">A Dataset for Anaphora Analysis in French Emails</a>
+        <span class="authors">H. Guenoune, K. Cousot, M. Lafourcade, M. Mekaoui, C. Lopez — pp. 165–175</span>
+      </div>
+    </div>
+
+    <div class="pub-group">Ateliers nationaux</div>
+    <div class="pubs">
+      <div class="pub">
+        <span class="venue">TextMine @ EGC 2024</span>
+        <a class="title" href="https://cnrs.hal.science/TEXTMINE/lirmm-04459556v1">Extraction de connaissances basée sur l'analyse formelle de concepts en vue de l'assistance aux débats en ligne</a>
+        <span class="authors">I. Ben-Sassi, H. Guenoune, A. Bazin, M. Huchard, M. Lafourcade, J. Sallantin — pp. 1–12</span>
+      </div>
+    </div>
+
+    <div class="pub-group">Thèse de doctorat</div>
+    <div class="pubs">
+      <div class="pub">
+        <span class="venue">Université de Montpellier · 2022</span>
+        <a class="title" href="https://theses.fr/2022UMONS073">Résolution des anaphores dans la communication électronique médiée : heuristiques et apport d'informations de sens commun</a>
+        <span class="authors">H. Guenoune — Thèse CIFRE, LIRMM. Dir. M. Lafourcade</span>
+      </div>
+    </div>
+
+    <p style="margin-top:22px;font-size:14px;color:var(--muted)">Profil complet et liens : <a href="https://orcid.org/0009-0008-7443-8503" target="_blank" rel="noopener">ORCID 0009-0008-7443-8503</a>.</p>
+  </div>
+</section>
+
+<section id="recherche">
+  <div class="wrap">
+    <div class="section-head"><h2>Bio &amp; intérêts de recherche</h2></div>
+    <div class="callout">
+      <p>
+        Docteur en informatique (Université de Montpellier, 2022), j'ai réalisé ma thèse en contrat
+        CIFRE entre le LIRMM et l'entreprise Emvista, sur l'apport de la sémantique de sens commun à
+        la résolution des anaphores. J'ai ensuite poursuivi en laboratoire (LIRMM) sur le projet ANR
+        AREN-DIA, avant un poste d'ATER à Polytech Montpellier (équipe SLICE).
+      </p>
+      <p>
+        Mes projets s'enchaînent selon un même fil : chacun naît d'une question soulevée par le
+        précédent.
+      </p>
+      <ul class="thread">
+        <li>Ma thèse pose la question de départ — <strong>structurer automatiquement des données peu
+        formelles</strong> — et y répond par <span class="cite" tabindex="0"><strong>ARCS</strong><span class="cite-pop">Guenoune (2022) — Résolution des anaphores dans la communication électronique médiée (thèse, Univ. de Montpellier).<br>Guenoune et al. (2020) — A Dataset for Anaphora Analysis in French Emails (CRAC @ COLING 2020).</span></span>, un système modulaire
+        et explicable, fondé sur un principe d'interdépendance « holistique » où chaque décision
+        partielle reste révisable à la lumière des suivantes.</li>
+        <li>La résolution des anaphores possessives (« son vélo » pour « le vélo de Lucie ») a fait
+        émerger le besoin d'étudier les relations sémantiques des constructions « A de B »
+        &nbsp;→&nbsp; <span class="cite" tabindex="0"><strong>GRASP-it</strong><span class="cite-pop">Guenoune &amp; Lafourcade (2024) — Symbolic Learning of Rules for Semantic Relation Types Identification (CogALex @ LREC-COLING 2024).<br>Guenoune &amp; Lafourcade (2024) — Extraction automatique de règles pour les constructions génitives (IC @ PFIA 2024).</span></span>.</li>
+        <li>Le traitement des séquences d'événements (cas de type Winograd) a révélé le besoin d'une
+        représentation explicite de l'enchaînement narratif &nbsp;→&nbsp; les <strong>chaînes de
+        prédicats narratifs</strong> <span style="color:var(--muted)">(travail en cours)</span>.</li>
+        <li>Ce même principe d'interdépendance irrigue l'<span class="cite" tabindex="0"><strong>interprétation d'analogies</strong><span class="cite-pop">Roux, Guenoune, Lafourcade, Moot (2024) — Explaining Metaphors by Solving Analogies using a Knowledge Graph in French (TSD 2024).<br>Roux et al. (2025) — Utilisation de mécanismes inférentiels dans l'explication de la métaphore (CORIA 2025).</span></span>
+        puis l'assistance aux débats (<span class="cite" tabindex="0"><strong>AREN</strong><span class="cite-pop">Ben-Sassi, Guenoune et al. (2024) — Débats en ligne : l'analyse formelle de concepts comme outil d'extraction de connaissances (Revue Intelligibilité du Numérique).<br>Ben-Sassi, Guenoune et al. (2024) — Extraction de connaissances basée sur l'AFC (TextMine @ EGC 2024).</span></span>), où des connaissances
+        partielles se complètent et se corrigent mutuellement.</li>
+      </ul>
+      <p>
+        Ce principe d'interdépendance trouve une
+        <span class="cite" tabindex="0">formulation plus générale dans l'architecture des systèmes d'IA<span class="cite-pop">Lopez et al. (2022) — Recursive Named Entity Recognition (Springer).<br>Guenoune (2022) — schéma récursif d'interdépendance (thèse).</span></span>
+        eux-mêmes, et m'oriente vers les <strong>systèmes neuro-symboliques et agentiques</strong>.
+      </p>
+      <div class="subbox">
+        <div class="label">Questions sur lesquelles j'aimerais travailler</div>
+        <p>
+          <strong>Faire coopérer LLM et connaissances symboliques.</strong> Le modèle <em>propose</em>,
+          une couche symbolique <span class="cite" tabindex="0"><em>valide, consolide et corrige</em> par inférence<span class="cite-pop">Guenoune &amp; Lafourcade (2024) — apprentissage symbolique de règles pour la consolidation de connaissances (CogALex @ LREC-COLING 2024).</span></span>
+          — pour enrichir une base de connaissances tout en limitant les hallucinations (dans la
+          continuité de <strong>Jarvis</strong>).
+        </p>
+        <p>
+          <strong>Orchestrer des agents fiables.</strong> Au sein des systèmes
+          <span class="cite" tabindex="0">multi-agents à base de LLM<span class="cite-pop">Guo et al. (2024) — Large Language Model based Multi-Agents: A Survey of Progress and Challenges.<br>Liu et al. (2023) — Dynamic LLM-Agent Network.<br>Ren et al. (2025) — Anemoi: a semi-centralized multi-agent system.<br>Park et al. (2023) — Generative Agents: Interactive Simulacra of Human Behavior.</span></span>,
+          l'enjeu se déplace vers la définition des rôles, la communication, et surtout la
+          <span class="cite" tabindex="0">détection et la gestion de la propagation des erreurs<span class="cite-pop">Cemri et al. (2025) — Why do multi-agent LLM systems fail?<br>Finkel et al. (2006) — Solving the Problem of Cascading Errors (EMNLP).</span></span>.
+        </p>
+        <p>
+          <span class="cite" tabindex="0"><strong>Évaluer les IA génératives</strong><span class="cite-pop">He et al. (2024) — LLM-based Multi-Agent Systems for Software Engineering (ACM TOSEM).<br>Cemri et al. (2025) — Why do multi-agent LLM systems fail?</span></span>
+          — qualité et cohérence des connaissances produites, méthodes de validation automatique.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cv-view">
+  <div class="wrap">
+    <div class="section-head"><h2>Curriculum Vitæ</h2></div>
+    <div style="display:flex;justify-content:flex-end;margin:-12px 0 14px">
+      <a class="btn" href="cv.pdf" download="CV_Hani_Guenoune.pdf">Télécharger le CV (PDF) ↓</a>
+    </div>
+    <div class="cv-frame">
+      <iframe src="cv.pdf#view=FitH" title="CV de Hani Guenoune" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="section-head"><h2>Contact</h2></div>
+    <div class="grid">
+      <a class="big" href="mailto:enhagu01@gmail.com">enhagu01@gmail.com</a>
+      <div style="display:flex;gap:18px;flex-wrap:wrap">
+        <a class="btn" href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        <a class="btn" href="https://orcid.org/0009-0008-7443-8503" target="_blank" rel="noopener">ORCID</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Hani Guenoune · Montpellier · Docteur en informatique — systèmes IA fiables (LLM + IA symbolique) &amp; structuration de connaissances</div>
+</footer>
+
+<script>
+  // Carrousel projets (translation animée + bouclage + points indicateurs)
+  (function () {
+    var track = document.querySelector('#projets .cases-track');
+    var slides = document.querySelectorAll('#projets .slide');
+    var dotsWrap = document.getElementById('car-dots');
+    if (!track) return;
+    var n = slides.length, i = 0, dots = [];
+    if (dotsWrap) {
+      for (var k = 0; k < n; k++) {
+        var d = document.createElement('button');
+        d.type = 'button';
+        d.setAttribute('aria-label', 'Projet ' + (k + 1) + ' sur ' + n);
+        (function (idx) { d.addEventListener('click', function () { i = idx; render(); }); })(k);
+        dotsWrap.appendChild(d);
+        dots.push(d);
+      }
+    }
+    function render() {
+      track.style.transform = 'translateX(' + (-i * 100) + '%)';
+      dots.forEach(function (d, idx) { d.classList.toggle('active', idx === i); });
+    }
+    document.querySelectorAll('.car-btn').forEach(function (b) {
+      b.addEventListener('click', function () {
+        i = (i + parseInt(b.dataset.dir, 10) + n) % n;
+        render();
+      });
+    });
+    // swipe tactile (mobile)
+    var sx = null, area = document.querySelector('#projets .cases');
+    if (area) {
+      area.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
+      area.addEventListener('touchend', function (e) {
+        if (sx === null) return;
+        var dx = e.changedTouches[0].clientX - sx; sx = null;
+        if (Math.abs(dx) > 40) { i = (i + (dx < 0 ? 1 : -1) + n) % n; render(); }
+      }, { passive: true });
+    }
+    render();
+  })();
+
+  // Cursus : afficher / masquer le détail de chaque ligne
+  (function () {
+    document.querySelectorAll('.edu-toggle').forEach(function (btn) {
+      var detail = btn.nextElementSibling;
+      if (!detail || !detail.classList.contains('edu-detail')) return;
+      btn.addEventListener('click', function () {
+        var hidden = detail.hasAttribute('hidden');
+        if (hidden) { detail.removeAttribute('hidden'); btn.textContent = 'Masquer le détail'; btn.setAttribute('aria-expanded', 'true'); }
+        else { detail.setAttribute('hidden', ''); btn.textContent = 'Voir le détail'; btn.setAttribute('aria-expanded', 'false'); }
+      });
+    });
+  })();
+
+  // Enseignement : afficher / masquer le tableau et sa légende
+  (function () {
+    var tt = document.getElementById('teach-toggle');
+    var td = document.getElementById('teach-detail');
+    if (!tt || !td) return;
+    tt.addEventListener('click', function () {
+      var hidden = td.hasAttribute('hidden');
+      if (hidden) { td.removeAttribute('hidden'); tt.textContent = 'Masquer le détail'; tt.setAttribute('aria-expanded', 'true'); }
+      else { td.setAttribute('hidden', ''); tt.textContent = 'Voir le détail'; tt.setAttribute('aria-expanded', 'false'); }
+    });
+  })();
+</script>
+</body>
+</html>
