@@ -82,8 +82,22 @@ section { padding: 46px 0; }
 
 /* ---------- Pitch / expertise chips ---------- */
 .expertise { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-@media (max-width: 760px){ .expertise { grid-template-columns: 1fr; } }
+@media (max-width: 760px){ .expertise:not(.marquee) { grid-template-columns: 1fr; } }
 .exp-card { background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+
+/* Domaines : carrousel auto-défilant (marquee) sur une ligne */
+.expertise.marquee { display: block; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); }
+.marquee-track { display: flex; width: max-content; animation: marquee 34s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-group { display: flex; gap: 16px; padding-right: 16px; }
+.marquee .exp-card { flex: 0 0 300px; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce){
+  .expertise.marquee { overflow: visible; -webkit-mask-image: none; mask-image: none; }
+  .marquee-track { animation: none; width: auto; }
+  .marquee-group { flex-wrap: wrap; }
+  .marquee-group[aria-hidden="true"] { display: none; }
+}
 .exp-card h3 { margin: 0 0 8px; font-size: 16.5px; }
 .exp-card p { margin: 0; color: var(--ink-soft); font-size: 14.5px; }
 
