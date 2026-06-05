@@ -116,6 +116,10 @@ button.btn { font-family: inherit; cursor: pointer; }
 .case dd { margin: 0; color: var(--ink-soft); font-size: 15px; }
 .case .links { margin-top: 16px; display: flex; gap: 14px; flex-wrap: wrap; }
 .case .links a { font-size: 14px; font-weight: 600; }
+.case .pubs-row { margin-top: 12px; font-size: 13px; color: var(--muted); line-height: 1.9; }
+.case .pubs-row .lbl { font-weight: 700; color: var(--ink-soft); margin-right: 4px; }
+.case .pubs-row a { color: var(--accent); font-weight: 600; }
+.case .pubs-row .arr { color: var(--muted); margin: 0 5px; }
 .case .stack { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 7px; }
 .chip { background: var(--chip); border-radius: 999px; padding: 4px 11px; font-size: 12.5px; color: var(--ink-soft); }
 @media (max-width: 560px){ .case dl { grid-template-columns: 1fr; gap: 2px 0; } .case dt { padding-top: 12px; } }
