@@ -92,12 +92,6 @@ section { padding: 46px 0; }
 .marquee-group { display: flex; gap: 16px; padding-right: 16px; }
 .marquee .exp-card { flex: 0 0 300px; }
 @keyframes marquee { to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce){
-  .expertise.marquee { overflow: visible; -webkit-mask-image: none; mask-image: none; }
-  .marquee-track { animation: none; width: auto; }
-  .marquee-group { flex-wrap: wrap; }
-  .marquee-group[aria-hidden="true"] { display: none; }
-}
 .exp-card h3 { margin: 0 0 8px; font-size: 16.5px; }
 .exp-card p { margin: 0; color: var(--ink-soft); font-size: 14.5px; }
 
