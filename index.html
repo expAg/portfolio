@@ -107,12 +107,12 @@
 
       <div class="slide"><article class="case">
         <span class="tag">Travail en cours · IA neuro-symbolique · Agents LLM</span>
-        <h3>Jarvis — Projet d'agentification de JeuxDeMots</h3>
-        <p class="ctx">LIRMM, équipe SLICE — en cours · open-source</p>
+        <h3>Jarvis : Projet d'agentification de JeuxDeMots</h3>
+        <p class="ctx">LIRMM, équipe SLICE · en cours</p>
         <dl>
           <dt>Problème</dt><dd>Les LLM produisent un langage fluide mais hallucinent ; une base de connaissances symbolique est exacte mais coûteuse à enrichir et à corriger. Comment faire coopérer les deux pour découvrir, contrôler et consolider de la connaissance fiable ?</dd>
-          <dt>Approche</dt><dd>Architecture neuro-symbolique où le LLM propose et la couche symbolique valide. Le modèle génère des relations candidates ; un vérificateur déterministe (inférence bornée sur le graphe) les confirme, les contredit ou les écarte avant toute écriture. Cinq agents guidés — enrichissement, audit, détection de lacunes, signalement d'erreurs, statistiques — et une orchestration multi-agents.</dd>
-          <dt>Résultat</dt><dd>Plateforme web et ~35 outils exposés via le Model Context Protocol (utilisables depuis n'importe quel client LLM), client typé reproductible (cache, traçabilité), <em>claim-checker</em> déterministe et auditable, visualisation de sous-graphes pour l'explicabilité.</dd>
+          <dt>Approche</dt><dd>Architecture neuro-symbolique où le LLM propose et la couche symbolique valide. Le modèle génère des relations candidates ; un vérificateur déterministe (inférence bornée sur le graphe) les confirme, les contredit ou les écarte avant toute écriture. Agents guidés : enrichissement, audit, détection de lacunes, signalement d'erreurs, statistiques. Orchestration multi-agents.</dd>
+          <dt>Résultat</dt><dd>Plateforme web et ~35 outils exposés via MCP (utilisables depuis n'importe quel client LLM), client typé reproductible, <em>claim-checker</em> déterministe et auditable, visualisation de sous-graphes pour l'explicabilité.</dd>
         </dl>
         <div class="stack">
           <span class="chip">Agents LLM</span><span class="chip">Neuro-symbolique</span><span class="chip">JeuxDeMots</span><span class="chip">MCP</span><span class="chip">LangChain</span><span class="chip">Python</span>
@@ -125,7 +125,7 @@
       <div class="slide"><article class="case">
         <span class="tag">IA symbolique + LLM · Génie logiciel</span>
         <h3>Restructuration de modèles de classes assistée par LLM</h3>
-        <p class="ctx">LIRMM, équipe SLICE — 2025 · publié à CONCEPTS 2025</p>
+        <p class="ctx">LIRMM, équipe SLICE · 2025 · publié à CONCEPTS 2025</p>
         <dl>
           <dt>Problème</dt><dd>Identifier des opportunités de refactorisation dans des modèles UML est coûteux et difficile à automatiser ; les abstractions produites automatiquement restent inintelligibles sans un bon nommage.</dd>
           <dt>Approche</dt><dd>Processus combinant l'Analyse Formelle de Concepts relationnelle (extraction symbolique d'abstractions) et des LLM pour nommer et interpréter ces abstractions.</dd>
@@ -141,8 +141,8 @@
 
       <div class="slide"><article class="case">
         <span class="tag">Plateforme en production · TAL</span>
-        <h3>AREN / KeepTalk — extraction de connaissances pour l'assistance aux débats</h3>
-        <p class="ctx">Projet ANR AREN-DIA, LIRMM — 2023–2024</p>
+        <h3>AREN / KeepTalk · extraction de connaissances pour l'assistance aux débats</h3>
+        <p class="ctx">Projet ANR AREN-DIA, LIRMM 2023–2024</p>
         <dl>
           <dt>Problème</dt><dd>Aider des élèves à structurer leurs arguments en ligne, et extraire automatiquement la connaissance produite dans des débats peu formels.</dd>
           <dt>Approche</dt><dd>Plateforme web de débats + pipeline d'indexation et d'extraction d'associations par Analyse Formelle de Concepts, adossé au réseau JeuxDeMots, enrichi itérativement.</dd>
@@ -165,8 +165,8 @@
 
       <div class="slide"><article class="case">
         <span class="tag">Apprentissage de règles symbolique</span>
-        <h3>GRASP-it — classification de relations sémantiques</h3>
-        <p class="ctx">LIRMM, équipe TEXTE — 2023–2024</p>
+        <h3>GRASP-it · classification de relations sémantiques</h3>
+        <p class="ctx">LIRMM, équipe TEXTE 2023–2024</p>
         <dl>
           <dt>Problème</dt><dd>Capturer finement les relations sémantiques dans les constructions « A de B » (partie-tout, possession, matière…), malgré la polysémie et le recouvrement des catégories.</dd>
           <dt>Approche</dt><dd>Algorithme d'apprentissage symbolique par induction généralisant des signatures sémantiques en modèles de contraintes interprétables et pondérés.</dd>
@@ -187,8 +187,8 @@
 
       <div class="slide"><article class="case">
         <span class="tag">Systèmes TAL explicables</span>
-        <h3>ARCS — résolution d'anaphores par le sens commun</h3>
-        <p class="ctx">Thèse CIFRE LIRMM–Emvista — 2018–2022</p>
+        <h3>ARCS · résolution d'anaphores par le sens commun</h3>
+        <p class="ctx">Thèse CIFRE LIRMM–Emvista 2018–2022</p>
         <dl>
           <dt>Problème</dt><dd>Résoudre automatiquement les anaphores dans des textes peu formels (e-mails éclatés en fils de discussion), là où les corpus de référence classiques ne suffisent pas.</dd>
           <dt>Approche</dt><dd>Système modulaire et <strong>explicable</strong> mobilisant des heuristiques sémantiques issues de JeuxDeMots ; construction de bout en bout d'un corpus annoté (schéma, protocole, accord inter-annotateurs).</dd>
@@ -210,7 +210,7 @@
       <div class="slide"><article class="case">
         <span class="tag">Raisonnement analogique · TAL</span>
         <h3>Interprétation automatique d'analogies sémantiques</h3>
-        <p class="ctx">LIRMM, équipe TEXTE — 2016–2018, prolongé</p>
+        <p class="ctx">LIRMM, équipe TEXTE 2016–2018, prolongé</p>
         <dl>
           <dt>Problème</dt><dd>Résoudre des équations analogiques A:B:C:x et interpréter le langage figuré, malgré la variabilité structurelle des analogies.</dd>
           <dt>Approche</dt><dd>Transposition des relations d'un domaine source vers un domaine cible via le graphe de connaissances JeuxDeMots ; corpus AnalogiX annoté en qualité et structure grâce au jeu sérieux CompalogiX.</dd>
@@ -230,7 +230,7 @@
 
       <div class="slide"><article class="case">
         <span class="tag">Extraction d'information · Domaine spécialisé</span>
-        <h3>Extraction de relations sémantiques — portail médecine de Wikipédia</h3>
+        <h3>Extraction de relations sémantiques · portail médecine de Wikipédia</h3>
         <p class="ctx">LIRMM, équipe TEXTE</p>
         <dl>
           <dt>Objectif</dt><dd>Enrichir une base de connaissances avec des relations sémantiques issues d'un domaine spécialisé.</dd>
@@ -254,7 +254,7 @@
 
     <div class="edu-entry">
       <div class="top">
-        <h3>Doctorat en informatique — Université de Montpellier</h3>
+        <h3>Doctorat en informatique · Université de Montpellier</h3>
         <span class="date">2018 – 2022</span>
       </div>
       <button class="edu-toggle" aria-expanded="false">Voir le détail</button>
@@ -276,7 +276,7 @@
 
     <div class="edu-entry">
       <div class="top">
-        <h3>Master DECOL — Données, Extraction, Connaissances, Ontologies, Langage</h3>
+        <h3>Master DECOL · Données, Extraction, Connaissances, Ontologies, Langage</h3>
         <span class="date">2016 – 2018</span>
       </div>
       <button class="edu-toggle" aria-expanded="false">Voir le détail</button>
@@ -313,7 +313,7 @@
       Vacataire puis ATER à Polytech Montpellier et à la Faculté des sciences de l'Université de
       Montpellier (~300 h), j'enseigne du L1 au M2 et aux cycles d'ingénieurs (PEIP, DaMs, DO).
       Mes enseignements portent sur le <strong>génie logiciel</strong> et ses fondements, avec des
-      ouvertures sur le traitement du langage. J'ai pris en charge plusieurs UE en autonomie —
+      ouvertures sur le traitement du langage. J'ai pris en charge plusieurs UE en autonomie :
       conception des supports, sujets et corrections d'examens.
     </p>
     <p style="margin:0 0 18px;display:flex;gap:12px;flex-wrap:wrap">
@@ -333,7 +333,7 @@
           <tr><td>Vacataire</td><td>2024–25</td><td>Polytech</td><td>Ing.</td><td>éq. M1</td><td class="matiere">Conception &amp; Programmation par Objet 2 (CPO2)</td><td class="num">48,75</td><td>CM-TD/TP</td></tr>
           <tr><td>Vacataire</td><td>2024–25</td><td>Fac. des Sciences</td><td>Master (ICo)</td><td>M1</td><td class="matiere">Structures de données (SD)</td><td class="num">24</td><td>TD/TP</td></tr>
           <tr><td>Vacataire</td><td>2024–25</td><td>Polytech</td><td>Ing.</td><td>éq. L3</td><td class="matiere">Fondamentaux Architecture &amp; Systèmes d'Exploitation (FASE)</td><td class="num">13,5</td><td>TD-TP</td></tr>
-          <tr><td>Vacataire</td><td>2024–25</td><td>Fac. des Sciences</td><td>M2 (IASD)</td><td>M2</td><td class="matiere">Langage Naturel 2 — sémantique (LN2)</td><td class="num">6</td><td>CM-TD/TP</td></tr>
+          <tr><td>Vacataire</td><td>2024–25</td><td>Fac. des Sciences</td><td>M2 (IASD)</td><td>M2</td><td class="matiere">Langage Naturel 2 · sémantique (LN2)</td><td class="num">6</td><td>CM-TD/TP</td></tr>
           <tr><td>Vacataire</td><td>2024–25</td><td>Fac. des Sciences</td><td>M2 (IASD)</td><td>M2</td><td class="matiere">IA pour le Génie Logiciel (IAGL)</td><td class="num">6</td><td>CM-TD/TP</td></tr>
           <tr><td>Vacataire</td><td>2024–25</td><td>Fac. des Sciences</td><td>M1 (GL)</td><td>M1</td><td class="matiere">Programmation par Objets (PO)</td><td class="num">1,5</td><td>TD/TP</td></tr>
           <tr class="sub"><td colspan="6">Volume horaire 2024–25</td><td class="num">99,75</td><td></td></tr>
@@ -485,8 +485,8 @@
         précédent.
       </p>
       <ul class="thread">
-        <li>Ma thèse pose la question de départ — <strong>structurer automatiquement des données langagières peu
-        formelles</strong> — et y répond par <span class="cite" tabindex="0"><strong>ARCS</strong><span class="cite-pop">Guenoune (2022) — Résolution des anaphores dans la communication électronique médiée (thèse, Univ. de Montpellier).<br>Guenoune et al. (2020) — A Dataset for Anaphora Analysis in French Emails (CRAC @ COLING 2020).</span></span>, un système modulaire
+        <li>Ma thèse pose la question de départ ; <strong>structurer automatiquement des données langagières peu
+        formelles</strong>, et y répond par <span class="cite" tabindex="0"><strong>ARCS</strong><span class="cite-pop">Guenoune (2022) Résolution des anaphores dans la communication électronique médiée (thèse, Univ. de Montpellier).<br>Guenoune et al. (2020) — A Dataset for Anaphora Analysis in French Emails (CRAC @ COLING 2020).</span></span>, un système modulaire
         et explicable, fondé sur un principe d'interdépendance « holistique » où chaque décision
         partielle reste révisable à la lumière des suivantes.</li>
         <li>La résolution des anaphores possessives (« son vélo » pour « le vélo de Lucie ») a fait
@@ -509,7 +509,7 @@
         <p>
           <strong>Faire coopérer LLM et connaissances symboliques.</strong> Le modèle <em>propose</em>,
           une couche symbolique <span class="cite" tabindex="0"><em>valide, consolide et corrige</em> par inférence<span class="cite-pop">Guenoune &amp; Lafourcade (2024) — apprentissage symbolique de règles pour la consolidation de connaissances (CogALex @ LREC-COLING 2024).</span></span>
-          — pour enrichir une base de connaissances tout en limitant les hallucinations (dans la
+          pour enrichir une base de connaissances tout en limitant les hallucinations (dans la
           continuité de <strong>Jarvis</strong>).
         </p>
         <p>
@@ -520,7 +520,7 @@
         </p>
         <p>
           <span class="cite" tabindex="0"><strong>Évaluer les IA génératives</strong><span class="cite-pop">He et al. (2024) — LLM-based Multi-Agent Systems for Software Engineering (ACM TOSEM).<br>Cemri et al. (2025) — Why do multi-agent LLM systems fail?</span></span>
-          — qualité et cohérence des connaissances produites, méthodes de validation automatique.
+          qualité et cohérence des connaissances produites, méthodes de validation automatique.
         </p>
       </div>
     </div>
@@ -553,7 +553,7 @@
 </section>
 
 <footer>
-  <div class="wrap">© 2026 Hani Guenoune · Montpellier · Docteur en informatique — systèmes IA fiables (LLM + IA symbolique) &amp; structuration de connaissances</div>
+  <div class="wrap">© 2026 Hani Guenoune · Montpellier · Docteur en informatique · systèmes IA fiables (LLM + IA symbolique) &amp; structuration de connaissances</div>
 </footer>
 
 <script>
