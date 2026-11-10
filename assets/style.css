@@ -1,6 +1,6 @@
 /* ============================================================
-   Hani Guenoune — portfolio & CV
-   Identité visuelle commune. Sobre, lisible, "research-flavored".
+    portfolio & CV
+   "research-flavored".
    ============================================================ */
 
 :root {
@@ -8,10 +8,10 @@
   --ink-soft:   #4f4a40;
   --muted:      #847c6e;
   --line:       #e7e0d2;
-  --bg:         #fefcf9;   /* surfaces (cartes, boutons, sous-cartes) : blanc cassé très léger */
-  --paper:      #fbf8f3;   /* fond de page : crème / papier subtil */
-  --bg-soft:    #f6f1e9;   /* encadrés teintés, chauds */
-  --accent:     #b5482f;   /* terracotta, rappel du dossier MCF */
+  --bg:         #fefcf9;   /* surfaces (cartes, boutons, sous-cartes) : blanc cassé */
+  --paper:      #fbf8f3;   /* fond de page : crème / papier */
+  --bg-soft:    #f6f1e9;   /* encadrés teintés */
+  --accent:     #b5482f;   /* terracotta */
   --accent-ink: #8f3722;
   --chip:       #efe7d8;
   --max:        980px;
@@ -182,7 +182,7 @@ button.btn { font-family: inherit; cursor: pointer; }
 .thread li:last-child { margin-bottom: 0; }
 .thread li::before { content: "•"; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
 
-/* citation : bulle au survol / clic (pas de navigation) */
+/* citation : bulle au survol / clic */
 .cite { position: relative; color: var(--accent); border-bottom: 1px dotted var(--accent); cursor: pointer; outline: none; }
 .cite-pop { position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 30; display: none;
   width: max-content; max-width: 360px; background: var(--ink); color: #fff; font-size: 12.5px; line-height: 1.5;
